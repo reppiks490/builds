@@ -1,6 +1,9 @@
 name: DISH Evolution - persistent checkpoint continuation (Node only)
 
 on:
+  push:
+    paths:
+      - '.github/workflows/dish-evolution.yml'
   schedule:
     - cron: '3/5 * * * *'
   workflow_dispatch:
