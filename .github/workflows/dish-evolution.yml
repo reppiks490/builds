@@ -1,0 +1,51 @@
+name: DISH Evolution - persistent checkpoint continuation (Node only)
+
+on:
+  schedule:
+    - cron: '3/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dish-evolution-continuation
+  cancel-in-progress: false
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Advance one bounded evolutionary epoch
+        env:
+          DISH_STEPS: '9000'
+          DISH_MAX_MS: '150000'
+        run: node dish-malware-ai-v8-laststand/worker.cjs
+      - name: Save and publish persistent checkpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dish-malware-ai-v8-laststand/state/latest.json
+          if git diff --cached --quiet; then
+            echo 'No changes to checkpoint'
+            exit 0
+          fi
+          git commit -m 'chore(dish): advance non-Codex evolutionary checkpoint [skip ci]'
+          for try in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo 'Checkpoint published'
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'Unable to publish checkpoint after retries'
+          exit 1
