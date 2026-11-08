@@ -1,4 +1,4 @@
-name: DISH V12 ADAPTIVE INTELLIGENCE - persistent non-Codex evolution
+name: DISH V13 50 EVOLUTIONARY ARENAS - persistent non-Codex evolution
 
 on:
   push:
@@ -26,18 +26,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test all 50 arenas, migration, and ablation integrity
+        run: node dish-malware-ai-v13-fifty-opportunities/test.cjs
       - name: Advance one bounded evolutionary epoch
         env:
           DISH_STEPS: '9000'
           DISH_MAX_MS: '150000'
-        run: node dish-malware-ai-v12-adaptive-intelligence/worker.cjs
+        run: node dish-malware-ai-v13-fifty-opportunities/worker.cjs
       - name: Save and publish persistent checkpoint
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add dish-malware-ai-v12-adaptive-intelligence/state/latest.json
+          git add dish-malware-ai-v13-fifty-opportunities/state/latest.json
           if git diff --cached --quiet; then
             echo 'No changes to checkpoint'
             exit 0
