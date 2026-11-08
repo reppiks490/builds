@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - '.github/workflows/dish-evolution.yml'
+      - 'dish-malware-ai-v15-swarm-counterlearning/index.html'
+      - 'dish-malware-ai-v15-swarm-counterlearning/test.cjs'
   schedule:
     - cron: '3/5 * * * *'
   workflow_dispatch:
