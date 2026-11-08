@@ -1,4 +1,5 @@
 name: DISH V15 SWARM COUNTERLEARNING - persistent non-Codex evolution
+# V15 test fix verification from current main, not a stale GitHub rerun commit
 
 on:
   push:
