@@ -27,3 +27,12 @@ def test_disallows_traversal_and_overlap():
     contract['rules']['HEAD_B'].append('server.py')
     with pytest.raises(ValueError,match='Ambiguous'):
         owner_of('server.py',contract)
+
+
+def test_git_repo_root_paths_map_to_same_owner_without_allowing_other_repos():
+    assert owner_of('myriad-omega-source/training/individual_weight_bank.py')=='HEAD_B'
+    assert owner_of('myriad-omega-source/server.py')=='HEAD_C'
+    assert owner_of('myriad-omega-source/coordination/ownership.json')=='HEAD_A'
+    assert validate('HEAD_B',['myriad-omega-source/training/policy_inference.py'])['status']=='PASS'
+    assert validate('HEAD_B',['myriad-omega-source/server.py'])['status']=='BLOCKED'
+    assert validate('HEAD_A',['myriad-omega-v14/SOURCE_BUNDLE_INFO.json'])['status']=='BLOCKED'
