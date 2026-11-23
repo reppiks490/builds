@@ -18,7 +18,7 @@
 
 - `training/agentbank/agent_weights.fp16`: exact 8,220,000,000 bytes for 10,000 x 411,000 FP16. `weight_ledger.sqlite3` row digests, train step counts and per-agent byte checks are mandatory. Hashing whole bank may be time consuming.
 - `training/abilitybank`: 10 million 32-weight vectors, 200 stored training batches and ledger; it is a synthetic teacher, not a library of mastered skills.
-- Source ZIP deliberately excludes these. Need to train or restore known-good separately; do not copy from speculative paths, and do not regenerate claims without rerunning.
+- The compact GitHub source ZIP deliberately excludes these **and** the 736 KB compressed forensic row-digest ledger; it preserves aggregate audit JSON and source hashes, but new sessions cannot reverify all 10,000 training rows without separately obtaining the real checkpoint and ledger files. Need to train or restore known-good separately; do not copy from speculative paths, and do not regenerate claims without rerunning.
 - `training/transfer_candidates` is quarantined. It contains local candidate checkpoints only; the final source bundle intentionally excludes these candidate weight files, but retains summary audit.
 
 ## Step 4 — Model gateway (not enabled by default)
