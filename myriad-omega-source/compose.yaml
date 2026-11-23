@@ -1,0 +1,38 @@
+# Local-only deployment: never expose port 8788 to an untrusted network.
+services:
+  myriad:
+    build: .
+    image: myriad-omega-trinity:local
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:8788:8788'
+    environment:
+      MYRIAD_ALLOW_CONTAINER_BIND: '1'
+      MYRIAD_DB_PATH: /var/lib/myriad/myriad_events.sqlite3
+      MYRIAD_TRUSTED_DOCKER_HTTP_HOST: ollama
+      MYRIAD_BACKEND_NOESIS: ${MYRIAD_BACKEND_NOESIS:-ollama}
+      MYRIAD_URL_NOESIS: ${MYRIAD_URL_NOESIS:-http://ollama:11434}
+      MYRIAD_MODEL_NOESIS: ${MYRIAD_MODEL_NOESIS:-qwen3.5:4b}
+      MYRIAD_BACKEND_PRAXIS: ${MYRIAD_BACKEND_PRAXIS:-ollama}
+      MYRIAD_URL_PRAXIS: ${MYRIAD_URL_PRAXIS:-http://ollama:11434}
+      MYRIAD_MODEL_PRAXIS: ${MYRIAD_MODEL_PRAXIS:-qwen3.5:4b}
+      MYRIAD_BACKEND_AEGIS: ${MYRIAD_BACKEND_AEGIS:-ollama}
+      MYRIAD_URL_AEGIS: ${MYRIAD_URL_AEGIS:-http://ollama:11434}
+      MYRIAD_MODEL_AEGIS: ${MYRIAD_MODEL_AEGIS:-qwen3.5:4b}
+    depends_on:
+      - ollama
+    volumes:
+      - myriad_state:/var/lib/myriad
+    pids_limit: 256
+    mem_limit: 1g
+    cpus: 2.0
+  ollama:
+    image: ollama/ollama:latest
+    restart: unless-stopped
+    expose:
+      - '11434'
+    volumes:
+      - ollama_models:/root/.ollama
+volumes:
+  ollama_models:
+  myriad_state:

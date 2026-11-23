@@ -1,0 +1,39 @@
+{
+  "ability_weight_bank": {
+    "hashed_batches_verified": 200,
+    "integrity_level": "all stored batch hashes checked; hashes are not independent provenance attestation",
+    "ledger_batch_count": 200,
+    "ledger_covered_rows": 10000000,
+    "malformed_batches": 0,
+    "real_world_certified": 0,
+    "status": "synthetic_complete",
+    "synthetic_trained": 10000000,
+    "target": 10000000,
+    "unknown_status_rows": 0
+  },
+  "agent_weight_bank": {
+    "agents_target": 10000,
+    "bank_exists": true,
+    "expected_fp16_bytes": 8220000000,
+    "file_bytes": 8220000000,
+    "hashed_agent_rows_verified": 10000,
+    "initialized": 10000,
+    "integrity_level": "all row digests matched; no independent training or mastery attestation",
+    "invalid_agent_rows": 0,
+    "per_agent_parameters": 411000,
+    "status": "trained_complete_internal_integrity",
+    "total_agent_parameters": 4110000000,
+    "trained": 10000
+  },
+  "agents_trained": 10000,
+  "audit_seconds": 7.2,
+  "distinct_weight_hashes": 10000,
+  "maximum_gradient_steps_per_agent": 2,
+  "mean_heldout_loss_after": 1.2134722883105278,
+  "mean_training_loss_after": 0.9275566697269678,
+  "mean_training_loss_before": 1.3450736421108245,
+  "minimum_gradient_steps_per_agent": 2,
+  "reported_heldout_loss_below_training_baseline": 6851,
+  "schema": "myriad.full_fleet_independent_weight_audit.v1",
+  "scientific_scope": "synthetic regression; not an independent semantic skill, trading edge or LLM-finetune certificate"
+}

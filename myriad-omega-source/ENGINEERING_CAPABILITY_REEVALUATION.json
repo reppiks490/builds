@@ -1,0 +1,104 @@
+{
+  "rubric": "0 absent; 1 design only; 2 locally implemented; 3 integration-tested; 4 stress-tested; 5 independently production-validated",
+  "score_type": "illustrative engineering readiness assessment, not measured general intelligence",
+  "mean_evidence_readiness_0_to_5": 2.13,
+  "possible_max": 5,
+  "dimensions": [
+    {
+      "dimension": "Actor runtime",
+      "evidence_score_0_to_5": 4,
+      "basis": "10,000 independent in-process coroutines; one host and shared inference capacity"
+    },
+    {
+      "dimension": "Workflow engineering",
+      "evidence_score_0_to_5": 3,
+      "basis": "100 reproducible deterministic workflow examples and 1,000 phase-specific pipeline examples; no production workflow certification"
+    },
+    {
+      "dimension": "Cross-workflow execution",
+      "evidence_score_0_to_5": 3,
+      "basis": "Explicit multi-workflow DAG, dependency handoffs, bounded two-stage parallelism; model-backed live run unverified"
+    },
+    {
+      "dimension": "Five-brain intelligence",
+      "evidence_score_0_to_5": 2,
+      "basis": "Five role prompts; distinct installed model backends and inference are NOT established"
+    },
+    {
+      "dimension": "Neural weight learning",
+      "evidence_score_0_to_5": 3,
+      "basis": "10,000 full 411,000-parameter PyTorch policies have synthetic training records; 8.22 GB byte audit conducted separately; no foundation LLM fine-tune"
+    },
+    {
+      "dimension": "Verified policy inference",
+      "evidence_score_0_to_5": 3,
+      "basis": "A saved 411k-parameter per-agent neural model can be loaded with byte integrity check and evaluated on synthetic features"
+    },
+    {
+      "dimension": "Quarantined adaptive memory",
+      "evidence_score_0_to_5": 2,
+      "basis": "Independent candidate weights and SHA256-linked SQLite evidence; promotion disabled; no continual training daemon"
+    },
+    {
+      "dimension": "Mastery curriculum",
+      "evidence_score_0_to_5": 1,
+      "basis": "1,000 defined tracks and 10M small synthetic-trained ability heads; zero independently mastered real-world abilities"
+    },
+    {
+      "dimension": "General intelligence",
+      "evidence_score_0_to_5": 0,
+      "basis": "No externally validated broad intelligence benchmark"
+    },
+    {
+      "dimension": "Trading ability",
+      "evidence_score_0_to_5": 0,
+      "basis": "No verified out-of-sample strategy or paper/live trading record"
+    },
+    {
+      "dimension": "Real-world mastery",
+      "evidence_score_0_to_5": 0,
+      "basis": "No completed supervised external task benchmark"
+    },
+    {
+      "dimension": "Operations and recovery",
+      "evidence_score_0_to_5": 2,
+      "basis": "Local SQLite and health endpoints; restart interruption requires operator"
+    },
+    {
+      "dimension": "Security and authority",
+      "evidence_score_0_to_5": 2,
+      "basis": "Loopback bind and no external side effects; no authentication for public deployment"
+    },
+    {
+      "dimension": "Visual command center",
+      "evidence_score_0_to_5": 3,
+      "basis": "Local interactive dashboard, real API readings and separate topology animation"
+    },
+    {
+      "dimension": "Hardware efficiency",
+      "evidence_score_0_to_5": 4,
+      "basis": "Sparse track state, shared models, bounded inference; throughput limited by 16GB class laptop"
+    }
+  ],
+  "real_brain_routes_ready": 0,
+  "registered_agents": 10000,
+  "live_actors": 10000,
+  "workflow_contracts": 100,
+  "workflows_with_local_deterministic_examples": 100,
+  "curriculum_tracks": 1000,
+  "ability_adapter_target": 10000000,
+  "real_world_ability_certifications": 0,
+  "independently_certified_mastery_tracks": 0,
+  "synthetic_411k_agent_weights_ledger_trained": 10000,
+  "quarantined_adaptive_candidates": 100,
+  "real_money_trading_enabled": false,
+  "external_side_effects_enabled": false,
+  "next_gates": [
+    "connect and test a real local model",
+    "perform audited multi-workflow model run",
+    "measure unseen general intelligence tasks",
+    "run rigorous historical then forward paper trading",
+    "prove supervised task completion",
+    "productionize remote authorization and incident recovery"
+  ]
+}

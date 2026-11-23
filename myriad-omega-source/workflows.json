@@ -1,0 +1,3052 @@
+[
+  {
+    "id": "W01",
+    "name": "Horizon Engine",
+    "domain": "Discovery",
+    "objective": "Detect and rank emerging opportunity hypotheses",
+    "deliverable": "Signal Atlas",
+    "stages": [
+      "scan",
+      "hypothesize",
+      "rank",
+      "challenge"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W02",
+    "name": "Abyssal Data",
+    "domain": "Data",
+    "objective": "Normalize heterogeneous sources with quality and lineage checks",
+    "deliverable": "Canonical Data Quilt",
+    "stages": [
+      "ingest",
+      "clean",
+      "validate",
+      "publish"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W03",
+    "name": "Causal Loom",
+    "domain": "Science",
+    "objective": "Evaluate explicit causal hypotheses and confounding pathways",
+    "deliverable": "Causal Evidence Map",
+    "stages": [
+      "formulate",
+      "model",
+      "evaluate",
+      "replicate"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W04",
+    "name": "Thought Foundry",
+    "domain": "Research",
+    "objective": "Synthesize competing literature and source claims",
+    "deliverable": "Evidence Synthesis Dossier",
+    "stages": [
+      "collect",
+      "crosscheck",
+      "synthesize",
+      "cite"
+    ],
+    "accent": "plasma",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W05",
+    "name": "Model Genesis",
+    "domain": "AI",
+    "objective": "Design controlled model evaluations and candidate comparisons",
+    "deliverable": "Model Evaluation Card",
+    "stages": [
+      "baseline",
+      "experiment",
+      "evaluate",
+      "gate"
+    ],
+    "accent": "jade",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W06",
+    "name": "Code Cathedral",
+    "domain": "Engineering",
+    "objective": "Produce bounded software changes with syntax and contract checks",
+    "deliverable": "Patch Manifest",
+    "stages": [
+      "specify",
+      "implement",
+      "test",
+      "review"
+    ],
+    "accent": "rose",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W07",
+    "name": "Verification Oracle",
+    "domain": "Assurance",
+    "objective": "Construct independent reproducible verification suites",
+    "deliverable": "Verification Ledger",
+    "stages": [
+      "inspect",
+      "challenge",
+      "verify",
+      "attest"
+    ],
+    "accent": "violet",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W08",
+    "name": "Citadel Defense",
+    "domain": "Security",
+    "objective": "Audit defensive controls and misconfiguration patterns",
+    "deliverable": "Defensive Posture Review",
+    "stages": [
+      "scope",
+      "inspect",
+      "harden",
+      "audit"
+    ],
+    "accent": "cobalt",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W09",
+    "name": "Infrastrata",
+    "domain": "Infrastructure",
+    "objective": "Plan capacity, resource topology, deployment and isolation",
+    "deliverable": "Capacity Blueprint",
+    "stages": [
+      "inventory",
+      "model",
+      "schedule",
+      "verify"
+    ],
+    "accent": "silver",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W10",
+    "name": "Phoenix Recovery",
+    "domain": "Reliability",
+    "objective": "Analyze incidents and recommend reversible recovery steps",
+    "deliverable": "Recovery Playbook",
+    "stages": [
+      "detect",
+      "isolate",
+      "recover",
+      "postmortem"
+    ],
+    "accent": "cyan",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W11",
+    "name": "Market Nexus",
+    "domain": "Markets",
+    "objective": "Evaluate synthetic financial signals without transacting",
+    "deliverable": "Market Observation Dossier",
+    "stages": [
+      "observe",
+      "normalize",
+      "test",
+      "report"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W12",
+    "name": "Risk Sovereign",
+    "domain": "Risk",
+    "objective": "Quantify uncertainty, drawdown and stress exposures",
+    "deliverable": "Risk Envelope",
+    "stages": [
+      "map",
+      "stress",
+      "bound",
+      "review"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W13",
+    "name": "World Weaver",
+    "domain": "Simulation",
+    "objective": "Create bounded interacting world-state simulations",
+    "deliverable": "World State Snapshot",
+    "stages": [
+      "initialize",
+      "step",
+      "measure",
+      "compare"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W14",
+    "name": "Lumen Interface",
+    "domain": "Design",
+    "objective": "Evaluate interface clarity, hierarchy and accessibility",
+    "deliverable": "Interaction Audit",
+    "stages": [
+      "inspect",
+      "prototype",
+      "evaluate",
+      "refine"
+    ],
+    "accent": "plasma",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W15",
+    "name": "Kinetic Atelier",
+    "domain": "Motion",
+    "objective": "Design frame-accurate motion systems and timing plans",
+    "deliverable": "Motion Blueprint",
+    "stages": [
+      "parameterize",
+      "solve",
+      "render",
+      "profile"
+    ],
+    "accent": "jade",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W16",
+    "name": "Narrative Forge",
+    "domain": "Communication",
+    "objective": "Produce evidence-grounded explanations and synthesis",
+    "deliverable": "Briefing Package",
+    "stages": [
+      "collect",
+      "outline",
+      "compose",
+      "verify"
+    ],
+    "accent": "rose",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W17",
+    "name": "Memory Constellation",
+    "domain": "Knowledge",
+    "objective": "Build provenance-preserving retrieval structures",
+    "deliverable": "Knowledge Graph",
+    "stages": [
+      "index",
+      "link",
+      "trace",
+      "audit"
+    ],
+    "accent": "violet",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W18",
+    "name": "Tribunal Zero",
+    "domain": "Assurance",
+    "objective": "Challenge unsupported claims and expose failure modes",
+    "deliverable": "Challenge Docket",
+    "stages": [
+      "inspect",
+      "challenge",
+      "verify",
+      "attest"
+    ],
+    "accent": "cobalt",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W19",
+    "name": "Pupil Academy",
+    "domain": "Education",
+    "objective": "Train and assess apprentices through controlled exercises",
+    "deliverable": "Apprentice Evaluation",
+    "stages": [
+      "observe",
+      "practice",
+      "evaluate",
+      "promote"
+    ],
+    "accent": "silver",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W20",
+    "name": "Evolution Council",
+    "domain": "Meta",
+    "objective": "Compare system improvements against independent benchmarks",
+    "deliverable": "Evolution Gate",
+    "stages": [
+      "baseline",
+      "change",
+      "challenge",
+      "decide"
+    ],
+    "accent": "cyan",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W21",
+    "name": "Bayesian Observatory",
+    "domain": "Science",
+    "objective": "Update beliefs using transparent likelihoods and priors",
+    "deliverable": "Posterior Ledger",
+    "stages": [
+      "formulate",
+      "model",
+      "evaluate",
+      "replicate"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W22",
+    "name": "Entropy Cartography",
+    "domain": "Information",
+    "objective": "Measure uncertainty and distinguish useful from noisy signals",
+    "deliverable": "Information Map",
+    "stages": [
+      "measure",
+      "filter",
+      "compare",
+      "interpret"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W23",
+    "name": "Graph Dominion",
+    "domain": "Algorithms",
+    "objective": "Find optimal pathways through constrained dependency graphs",
+    "deliverable": "Pathfinding Report",
+    "stages": [
+      "define",
+      "solve",
+      "verify",
+      "benchmark"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W24",
+    "name": "Monte Carlo Forge",
+    "domain": "Statistics",
+    "objective": "Stress-test stochastic assumptions across repeatable seeds",
+    "deliverable": "Distribution Study",
+    "stages": [
+      "sample",
+      "estimate",
+      "validate",
+      "report"
+    ],
+    "accent": "plasma",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W25",
+    "name": "Pareto Frontier",
+    "domain": "Optimization",
+    "objective": "Identify nondominated solutions to competing objectives",
+    "deliverable": "Frontier Catalog",
+    "stages": [
+      "frame",
+      "search",
+      "bound",
+      "select"
+    ],
+    "accent": "jade",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W26",
+    "name": "Anomaly Helix",
+    "domain": "Data",
+    "objective": "Detect robust distribution anomalies and evaluate flags",
+    "deliverable": "Anomaly Register",
+    "stages": [
+      "ingest",
+      "clean",
+      "validate",
+      "publish"
+    ],
+    "accent": "rose",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W27",
+    "name": "Fault Tree Cathedral",
+    "domain": "Reliability",
+    "objective": "Compute probabilistic failure propagation and safeguards",
+    "deliverable": "Fault Tree Analysis",
+    "stages": [
+      "detect",
+      "isolate",
+      "recover",
+      "postmortem"
+    ],
+    "accent": "violet",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W28",
+    "name": "Chronos Planner",
+    "domain": "Operations",
+    "objective": "Construct dependency-aware schedules and critical paths",
+    "deliverable": "Execution Timeline",
+    "stages": [
+      "prioritize",
+      "allocate",
+      "execute",
+      "reconcile"
+    ],
+    "accent": "cobalt",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W29",
+    "name": "Lineage Vault",
+    "domain": "Knowledge",
+    "objective": "Verify artifact ancestry and source provenance",
+    "deliverable": "Provenance Chain",
+    "stages": [
+      "index",
+      "link",
+      "trace",
+      "audit"
+    ],
+    "accent": "silver",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W30",
+    "name": "Token Observatory",
+    "domain": "Efficiency",
+    "objective": "Budget context, calls and workloads across agent teams",
+    "deliverable": "Inference Budget",
+    "stages": [
+      "profile",
+      "budget",
+      "optimize",
+      "audit"
+    ],
+    "accent": "cyan",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W31",
+    "name": "Semantic Geometry",
+    "domain": "Retrieval",
+    "objective": "Measure embedding similarity and quality boundaries",
+    "deliverable": "Similarity Index",
+    "stages": [
+      "encode",
+      "search",
+      "rerank",
+      "verify"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W32",
+    "name": "Consensus Engine",
+    "domain": "Governance",
+    "objective": "Resolve conflicting evidence with explicit quorum rules",
+    "deliverable": "Consensus Transcript",
+    "stages": [
+      "scope",
+      "deliberate",
+      "gate",
+      "audit"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W33",
+    "name": "Policy Sentinel",
+    "domain": "Governance",
+    "objective": "Inspect action requests against scoped policy gates",
+    "deliverable": "Policy Decision",
+    "stages": [
+      "scope",
+      "deliberate",
+      "gate",
+      "audit"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W34",
+    "name": "Resource Arbiter",
+    "domain": "Operations",
+    "objective": "Allocate scarce capacity with fairness guarantees",
+    "deliverable": "Allocation Plan",
+    "stages": [
+      "prioritize",
+      "allocate",
+      "execute",
+      "reconcile"
+    ],
+    "accent": "plasma",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W35",
+    "name": "Signal Fusion Reactor",
+    "domain": "Analytics",
+    "objective": "Merge independent measurements with weighted confidence",
+    "deliverable": "Fused Signal",
+    "stages": [
+      "collect",
+      "fuse",
+      "calibrate",
+      "publish"
+    ],
+    "accent": "jade",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W36",
+    "name": "Emergent Society",
+    "domain": "Simulation",
+    "objective": "Evaluate distributed coordination and equilibrium dynamics",
+    "deliverable": "Emergence Experiment",
+    "stages": [
+      "initialize",
+      "step",
+      "measure",
+      "compare"
+    ],
+    "accent": "rose",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W37",
+    "name": "Calibration Chamber",
+    "domain": "Statistics",
+    "objective": "Measure predicted confidence against empirical outcomes",
+    "deliverable": "Calibration Curve",
+    "stages": [
+      "sample",
+      "estimate",
+      "validate",
+      "report"
+    ],
+    "accent": "violet",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W38",
+    "name": "Human Factors Lab",
+    "domain": "Design",
+    "objective": "Evaluate target sizes, density and task friction",
+    "deliverable": "Usability Metrics",
+    "stages": [
+      "inspect",
+      "prototype",
+      "evaluate",
+      "refine"
+    ],
+    "accent": "cobalt",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W39",
+    "name": "Chromatic Spectrum",
+    "domain": "Design",
+    "objective": "Test perceptual contrast for visualization systems",
+    "deliverable": "Contrast Matrix",
+    "stages": [
+      "inspect",
+      "prototype",
+      "evaluate",
+      "refine"
+    ],
+    "accent": "silver",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W40",
+    "name": "Kinetic Physics",
+    "domain": "Motion",
+    "objective": "Solve stable animated spring motion and performance bounds",
+    "deliverable": "Motion Physics Trace",
+    "stages": [
+      "parameterize",
+      "solve",
+      "render",
+      "profile"
+    ],
+    "accent": "cyan",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W41",
+    "name": "Storyworld Assembly",
+    "domain": "Creative",
+    "objective": "Represent narrative dependency and dramatic escalation",
+    "deliverable": "Narrative State Graph",
+    "stages": [
+      "outline",
+      "construct",
+      "edit",
+      "evaluate"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W42",
+    "name": "Prompt Safety Lab",
+    "domain": "Assurance",
+    "objective": "Classify requests for authorization and controlled handling",
+    "deliverable": "Prompt Risk Review",
+    "stages": [
+      "inspect",
+      "challenge",
+      "verify",
+      "attest"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W43",
+    "name": "Replication Mesh",
+    "domain": "Infrastructure",
+    "objective": "Analyze cache placement and replicated read availability",
+    "deliverable": "Replication Topology",
+    "stages": [
+      "inventory",
+      "model",
+      "schedule",
+      "verify"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W44",
+    "name": "Compression Atelier",
+    "domain": "Data",
+    "objective": "Select reversible encoding and measure information retention",
+    "deliverable": "Compression Result",
+    "stages": [
+      "ingest",
+      "clean",
+      "validate",
+      "publish"
+    ],
+    "accent": "plasma",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W45",
+    "name": "Integrity Vault",
+    "domain": "Security",
+    "objective": "Prove payload integrity and deterministic fingerprints",
+    "deliverable": "Integrity Attestation",
+    "stages": [
+      "scope",
+      "inspect",
+      "harden",
+      "audit"
+    ],
+    "accent": "jade",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W46",
+    "name": "Service Pulse",
+    "domain": "Reliability",
+    "objective": "Analyze latency distributions, SLO and error budgets",
+    "deliverable": "SLO Dossier",
+    "stages": [
+      "detect",
+      "isolate",
+      "recover",
+      "postmortem"
+    ],
+    "accent": "rose",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W47",
+    "name": "Reconciliation Engine",
+    "domain": "Finance",
+    "objective": "Reconcile synthetic ledgers and expose mismatches",
+    "deliverable": "Reconciliation Audit",
+    "stages": [
+      "import",
+      "balance",
+      "reconcile",
+      "attest"
+    ],
+    "accent": "violet",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W48",
+    "name": "Scenario Prism",
+    "domain": "Planning",
+    "objective": "Compare counterfactual interventions and their consequences",
+    "deliverable": "Scenario Delta",
+    "stages": [
+      "forecast",
+      "compare",
+      "stress",
+      "decide"
+    ],
+    "accent": "cobalt",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W49",
+    "name": "Meta Evaluation Forge",
+    "domain": "Meta",
+    "objective": "Score test quality, coverage and evaluation blind spots",
+    "deliverable": "Evaluator Report",
+    "stages": [
+      "baseline",
+      "change",
+      "challenge",
+      "decide"
+    ],
+    "accent": "silver",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W50",
+    "name": "Triune Assembly",
+    "domain": "Governance",
+    "objective": "Coordinate discovery, construction and independent verification",
+    "deliverable": "Tri-Brain Verdict",
+    "stages": [
+      "scope",
+      "deliberate",
+      "gate",
+      "audit"
+    ],
+    "accent": "cyan",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W51",
+    "name": "Antikythera Lab",
+    "domain": "Research",
+    "objective": "Investigate complex systems using competing scientific hypotheses",
+    "deliverable": "Hypothesis Dossier",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W52",
+    "name": "Pareto Forge",
+    "domain": "Optimization",
+    "objective": "Evaluate multiobjective tradeoffs under competing constraints",
+    "deliverable": "Pareto Frontier",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W53",
+    "name": "Chronos Weaver",
+    "domain": "Forecasting",
+    "objective": "Build leakage-resistant time-series prediction protocols",
+    "deliverable": "Forecast Trial",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W54",
+    "name": "Saffron Atlas",
+    "domain": "Culture",
+    "objective": "Analyze multilingual and cross-cultural communication constraints",
+    "deliverable": "Context Matrix",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W55",
+    "name": "Neural Observatory",
+    "domain": "AI",
+    "objective": "Audit model uncertainty calibration and distribution shift",
+    "deliverable": "Model Calibration Report",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W56",
+    "name": "Mathematics Citadel",
+    "domain": "Mathematics",
+    "objective": "Prove or refute finite mathematical claims with explicit assumptions",
+    "deliverable": "Formal Proof Candidate",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W57",
+    "name": "Topological Cartographer",
+    "domain": "Geometry",
+    "objective": "Map constraints and geometric structure in graph and spatial systems",
+    "deliverable": "Topology Map",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W58",
+    "name": "Aether Synthesis",
+    "domain": "Chemistry",
+    "objective": "Evaluate safe and legitimate chemical research hypotheses from published evidence",
+    "deliverable": "Chemistry Evidence Review",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W59",
+    "name": "Bioinformatics Guild",
+    "domain": "Biology",
+    "objective": "Analyze nonclinical biological data with provenance and uncertainty",
+    "deliverable": "Bioinformatics Evidence Map",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W60",
+    "name": "Health Evidence Lens",
+    "domain": "Health",
+    "objective": "Synthesize public biomedical evidence without giving individual diagnoses",
+    "deliverable": "Literature Synthesis",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W61",
+    "name": "Legal Systems Mapper",
+    "domain": "Law",
+    "objective": "Compare legal regimes with jurisdiction and source disclaimers",
+    "deliverable": "Jurisdiction Review",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W62",
+    "name": "Protocol Architect",
+    "domain": "Infrastructure",
+    "objective": "Specify verifiable interfaces, protocols and compatibility checks",
+    "deliverable": "Protocol Contract",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W63",
+    "name": "Distributed Consensus",
+    "domain": "Systems",
+    "objective": "Compare consistency, availability and fault tolerance in distributed systems",
+    "deliverable": "Consistency Blueprint",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W64",
+    "name": "Supply Chain Foresight",
+    "domain": "Logistics",
+    "objective": "Model resilient sourcing and disruption response without real purchases",
+    "deliverable": "Supply Graph",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W65",
+    "name": "Energy Mesh",
+    "domain": "Energy",
+    "objective": "Analyze grid and energy-system constraints using public datasets",
+    "deliverable": "Energy Scenario",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W66",
+    "name": "Climate Resilience",
+    "domain": "Environment",
+    "objective": "Simulate climate adaptation and infrastructure stress cases",
+    "deliverable": "Resilience Scenario",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W67",
+    "name": "Habitat Simulator",
+    "domain": "Urban Systems",
+    "objective": "Evaluate urban planning and mobility constraints",
+    "deliverable": "Urban Simulation",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W68",
+    "name": "Orbital Dynamics Lab",
+    "domain": "Physics",
+    "objective": "Build bounded orbital and dynamical-system simulations",
+    "deliverable": "Dynamics Analysis",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W69",
+    "name": "Digital Twin Factory",
+    "domain": "Simulation",
+    "objective": "Construct scenario-specific digital twin contracts and validation tests",
+    "deliverable": "Twin Contract",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W70",
+    "name": "Robotics Arena",
+    "domain": "Robotics",
+    "objective": "Design safe robotics control simulations and evaluation protocols",
+    "deliverable": "Robotics Test Plan",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W71",
+    "name": "Semantic Observatory",
+    "domain": "Language",
+    "objective": "Assess semantics, language ambiguity and terminology alignment",
+    "deliverable": "Semantic Map",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W72",
+    "name": "Reasoning Gymnasium",
+    "domain": "Cognition",
+    "objective": "Construct adversarial reasoning curricula and scored rubrics",
+    "deliverable": "Reasoning Trial",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W73",
+    "name": "Proof Engine",
+    "domain": "Verification",
+    "objective": "Develop formal properties and model-based tests",
+    "deliverable": "Verification Candidate",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W74",
+    "name": "Coverage Cartographer",
+    "domain": "Software",
+    "objective": "Optimize test coverage with mutation and fuzzing metrics",
+    "deliverable": "Coverage Map",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W75",
+    "name": "Runtime Diagnostics",
+    "domain": "Reliability",
+    "objective": "Triangulate software failures and produce reproducible diagnoses",
+    "deliverable": "Incident Replay",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W76",
+    "name": "Secure Supply Chain",
+    "domain": "Security",
+    "objective": "Review dependency licenses, SBOMs and build provenance",
+    "deliverable": "Supply Chain Audit",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W77",
+    "name": "Privacy Foundry",
+    "domain": "Privacy",
+    "objective": "Design differential privacy and data-minimization evaluations",
+    "deliverable": "Privacy Impact Analysis",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W78",
+    "name": "Access Control Lab",
+    "domain": "Security",
+    "objective": "Test least-privilege access models in sandboxed conditions",
+    "deliverable": "Policy Assessment",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W79",
+    "name": "Safety Tribunal",
+    "domain": "Safety",
+    "objective": "Design hazard reviews and red-team protocols for proposed capabilities",
+    "deliverable": "Risk Verdict",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W80",
+    "name": "Reliability Observatory",
+    "domain": "Reliability",
+    "objective": "Define SLOs, error budgets and alerting strategies",
+    "deliverable": "Reliability Dashboard",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W81",
+    "name": "Learning Science Forge",
+    "domain": "Education",
+    "objective": "Evaluate active-learning curricula with heldout performance measures",
+    "deliverable": "Learning Trial",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W82",
+    "name": "Pupil Ascension Academy",
+    "domain": "Education",
+    "objective": "Design mentor-pupil progression and anti-cheating evaluation protocols",
+    "deliverable": "Promotion Ledger",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W83",
+    "name": "Knowledge Graphsmith",
+    "domain": "Knowledge",
+    "objective": "Build typed ontology and evidence relationship contracts",
+    "deliverable": "Knowledge Graph",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W84",
+    "name": "Memory Integrity Vault",
+    "domain": "Memory",
+    "objective": "Audit memory freshness, provenance and contradiction handling",
+    "deliverable": "Memory Audit",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W85",
+    "name": "Agent Incentives Lab",
+    "domain": "Game Theory",
+    "objective": "Stress test agent reward structures and collaboration incentives",
+    "deliverable": "Mechanism Proposal",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W86",
+    "name": "Swarm Assignment Engine",
+    "domain": "Orchestration",
+    "objective": "Allocate tasks to agents under throughput and fairness constraints",
+    "deliverable": "Assignment Proof",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W87",
+    "name": "Benchmark Tribunal",
+    "domain": "Evaluation",
+    "objective": "Build contamination-aware evaluation suites with independent reviewers",
+    "deliverable": "Benchmark Suite",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W88",
+    "name": "Generalization Frontier",
+    "domain": "AI",
+    "objective": "Test cross-domain transfer and out-of-distribution degradation",
+    "deliverable": "Transfer Report",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W89",
+    "name": "Causal Discovery Foundry",
+    "domain": "Causal Inference",
+    "objective": "Separate correlational patterns from identified intervention effects",
+    "deliverable": "Causal Research Plan",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W90",
+    "name": "Economic Scenario Lab",
+    "domain": "Economics",
+    "objective": "Model macroeconomic scenarios with uncertainty and explicit assumptions",
+    "deliverable": "Scenario Matrix",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W91",
+    "name": "Portfolio Decision Gym",
+    "domain": "Finance",
+    "objective": "Test simulated portfolio policies under risk and cost constraints",
+    "deliverable": "Paper Portfolio Review",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W92",
+    "name": "Derivative Structure Lab",
+    "domain": "Finance",
+    "objective": "Analyze options sensitivities and payoff scenarios without live orders",
+    "deliverable": "Derivatives Sandbox",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W93",
+    "name": "Orderbook Replay Lab",
+    "domain": "Market Data",
+    "objective": "Test synthetic and recorded orderbook execution assumptions",
+    "deliverable": "Replay Evaluation",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W94",
+    "name": "Market Integrity Guard",
+    "domain": "Trading Safety",
+    "objective": "Detect backtest leakage and unrealistic fills before paper testing",
+    "deliverable": "Execution Audit",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W95",
+    "name": "Strategic Communication Lab",
+    "domain": "Communication",
+    "objective": "Produce audience-specific reports with traceable evidence",
+    "deliverable": "Communication Packet",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W96",
+    "name": "Creative Systems Studio",
+    "domain": "Design",
+    "objective": "Generate evidence-based product design systems and UX experiments",
+    "deliverable": "Design System",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W97",
+    "name": "Motion Choreography Lab",
+    "domain": "Motion",
+    "objective": "Design motion sequencing, timing and accessibility evaluations",
+    "deliverable": "Motion Blueprint",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W98",
+    "name": "Worldbuilding Observatory",
+    "domain": "Simulation",
+    "objective": "Design coherent simulated worlds with measurable state transitions",
+    "deliverable": "World Dynamics Plan",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "amber",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W99",
+    "name": "Operational Governance",
+    "domain": "Governance",
+    "objective": "Propose approval flows, audit controls and escalation for autonomous systems",
+    "deliverable": "Governance Charter",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ice",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  },
+  {
+    "id": "W100",
+    "name": "Evolution Proving Ground",
+    "domain": "Adaptation",
+    "objective": "Compare candidate updates against baselines with rollback gates",
+    "deliverable": "Evolution Verdict",
+    "stages": [
+      "intake",
+      "decompose",
+      "investigate",
+      "validate",
+      "handoff"
+    ],
+    "accent": "ember",
+    "initial_agents": 100,
+    "pupils_per_agent": 4,
+    "brain_sequence": [
+      "NOESIS",
+      "MNEMOSYNE",
+      "PRAXIS",
+      "AEGIS",
+      "METIS"
+    ],
+    "authority": "sandbox_default",
+    "quality_gates": [
+      "source_trace",
+      "independent_check",
+      "risk_screen",
+      "human_approval_if_external"
+    ]
+  }
+]

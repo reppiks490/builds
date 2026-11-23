@@ -1,0 +1,29 @@
+name: MYRIAD Ω / fleet certification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Syntax verify
+        run: python -m compileall -q agent_mesh.py fabric.py operations.py operations_extended.py pipeline_runtime.py server.py certify_fleet.py training
+      - name: Fleet certification (10,000 independent actors)
+        run: python certify_fleet.py
+      - name: Full offline mock-model suite
+        run: |
+          python -m pip install pytest numpy torch safetensors
+          python -m pytest -q tests training/test_training.py training/test_ability_weight_bank.py
+      - name: Preserve evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: myriad-fleet-certification
+          path: FLEET_CERTIFICATION.json

@@ -1,0 +1,94 @@
+{
+  "architecture": {
+    "agent_checkpoint_integrity_rows": 10000,
+    "agent_checkpoint_merkle_root_sha256": "38f9e6df24b3eabc0238306d03203ca13436a95939a8c8a3e34c60ab1f625e19",
+    "agent_class_descriptors": 500,
+    "agent_coroutines_certified": 10000,
+    "agent_specific_trained_networks": 10000,
+    "brain_roles": 5,
+    "defined_curriculum_tracks": 1000,
+    "full_fleet_fp16_checkpoint_bytes": 8220000000,
+    "parameters_per_agent": 411000,
+    "pipelines_with_local_demo": 1000,
+    "quarantined_adaptive_learning_proposals": 100,
+    "real_world_abilities_certified": 0,
+    "selectable_skill_descriptors": 1500,
+    "synthetic_ability_adapters_trained": 10000000,
+    "synthetic_training_steps": 20000,
+    "tiers": 10,
+    "total_agent_owned_parameters": 4110000000,
+    "workflows": 100
+  },
+  "checkpoints": [
+    "TRAINING_FULL_FLEET_AUDIT.json",
+    "ADAPTIVE_PILOT_CERTIFICATION.json",
+    "BROWSER_VERIFICATION.json",
+    "FLEET_CERTIFICATION.json",
+    "MYRIAD_OMEGA_v1.0_TRAINED_10_AGENT_POLICY_DEMO_MANIFEST.json (external sample artifact)"
+  ],
+  "date_utc": "2026-11-23",
+  "distribution": {
+    "excluded_weight_storage": [
+      "training/agentbank (8.22 GB)",
+      "training/abilitybank (640 MB)",
+      "training/adaptive_candidates (~82 MB)"
+    ],
+    "optional_demo_zip": "MYRIAD_OMEGA_v1.0_TRAINED_10_AGENT_POLICY_DEMO.zip (10 real trained synthetic policy rows; separate archive, not full fleet)",
+    "pretrained_weights_in_source_archive": false,
+    "source_archive_contents": "source code, reproducibility metadata and checksums only",
+    "verification_without_checkpoints": "tests can run, but trained-fleet status must remain missing/unverified"
+  },
+  "limitations": [
+    "No installed real LLM provider verified",
+    "No real-world competence certification",
+    "No empirical trading performance",
+    "No protected remote deployment",
+    "No unattended indefinite learning"
+  ],
+  "readiness_gates": {
+    "merge_permitted": false,
+    "passed": 3,
+    "total": 13
+  },
+  "release": "MYRIAD-OMEGA-PENTARCH-v1.0.0-RELEASE-LOCKED",
+  "release_status": "RESEARCH_ONLY_INCOMPLETE_FOR_INTEGRATION",
+  "runtime": {
+    "gpu_training": false,
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "source_zip_omits_large_weights": true,
+    "torch": "2.10.0+cpu"
+  },
+  "source_shas": {
+    "ABILITY_TRAINING_VERIFICATION.md": "89fa3d211991b7ec272c7dc6710ddff52eae8dd428509ddaf5f11a5537761bf3",
+    "BUILD_STATUS_v1.md": "ecf6c5ba55cb9493b4e767fcf87481e4f4010bc0e9c080e1db06cef8b1f5083f",
+    "DEPLOYMENT.md": "a86a64a5a5e798b50a8c2768bbc43e99229849d63703c815e7ad4705b3adc9bf",
+    "INTEGRATION_PLAN.md": "2bec0356ce04925df0384078c99e50a46b759069dfa34f4a216defcc0009ac58",
+    "README.md": "aa7a0fbbbcfaf11ce0584786429c2d8fb1054b94dd8cd55d0f4094418fe26aad",
+    "VERIFICATION.md": "962e51382709f25c08c000d3eb5ca58f732b5e528f8030257f8e8d5c4dd42ee1",
+    "agent_mesh.py": "b5f9c788c1f328f2e859fc7603f5960eef93e9fab4dcc19775815af5ac949211",
+    "assets/console.js": "9ba452aee225be20ad51290da703b79f4d0c24b1902a21912cea35ab9c962851",
+    "assets/theme.css": "d53206836c38b9e180a803c4c09fa7ce3d4d674553e68ffd70777c350572ed11",
+    "fabric.py": "c9920d47ea01f16440506369e0ed3961a15b60326e3397dbc8a736d7bc9807cb",
+    "http_security.py": "c0fe0f124f57a61647bd5feaea4be5e1962492ee32dcd61f088ddd4fda871b37",
+    "index.html": "feaf5f4abd1e5a6239817359308606b43026336f73492d5ade336367ce581be9",
+    "integration_guard.py": "3d199a1dbcd1b1408002bb8f213544f2ccdccc407034b1ea3c23ba5128517faf",
+    "operations_extended.py": "561d1738bbb1fd3d16b0a73857b841b61167cfaacffad708f56e24cefd7c0f09",
+    "pipeline_runtime.py": "04d69cb857a3a31a646b2e948befc3fbb781344e578e9656d4581673824c52af",
+    "server.py": "1b68182936b2f7f8af1083ccbbc828227b59ba79c200532b33b1230c3298552e",
+    "tools/package_source.py": "9cf1f9e393c631da058a2030656451b20d9d00ecbbeb3c47e9faf9ee1f100b0f",
+    "training/ability_weight_bank.py": "422b28a9fd9fab521679c7714bc22742e56f657d7f5886baa97092a1d5880182",
+    "training/adaptive_sandbox.py": "557b7bcd885ad0b1e967f97e7314d1edf8852f7323b9076e41a8ceaf1bc3a9cb",
+    "training/adaptive_telemetry.py": "4122e7fd95b7c015680a92e4365f951663da2a2a926340b9709a527458d15b85",
+    "training/fleet_telemetry.py": "674b324bf280bd8af62e29ab4f571341f27e00cc37568a5f49a2a5e875bdbafc",
+    "training/fleet_trainer.py": "1ce60db97832ba5ecf346909363e81578e9a321cf6558a9e8129f14a7fece080",
+    "training/individual_weight_bank.py": "31b5e8e741b45c46c5e0ebcf505a50fb4e90bd3a9ba4ccfb3cdf9e3816c02b2e",
+    "training/policy_inference.py": "cc4f454dc25f0904bae1a7a9161bf6cdd08559db464990f084f1558dae5d3fa4",
+    "training/portable_policy_demo.py": "59c2a7f0fcaa8d10ce6de5983ef3051148987dfc0f98cf47d4c659091e0df8e7"
+  },
+  "targets": {
+    "changes_to_targets": false,
+    "omnigenesis": "reppiks490/Icarus#503",
+    "umbra": "reppiks490/umbra-sovereign-worlds"
+  }
+}

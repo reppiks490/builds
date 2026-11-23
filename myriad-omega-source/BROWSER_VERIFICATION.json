@@ -1,0 +1,14 @@
+{
+  "schema": "myriad.ui_live_e2e.v1",
+  "registered": 10000,
+  "trained_agents_ledger": 10000,
+  "byte_checked_agent_10000": true,
+  "agent_10000_real_neural_policy_inference": true,
+  "all_100_workflows_visible": true,
+  "pipeline_P1000_read_only": true,
+  "adaptive_memory_evidence_count": 100,
+  "desktop_js_errors": [],
+  "mobile_js_errors": [],
+  "phone_horizontal_overflow": false,
+  "browser_test_mode": "real backend HTTP via urllib; browser rendered with captured live-API fixtures because browser localhost navigation blocked by environment"
+}

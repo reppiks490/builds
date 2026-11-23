@@ -1,0 +1,29 @@
+# Explicit manual-only fail-closed gate. This workflow performs NO mergers.
+name: MYRIAD Ω / release lock (manual verification only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify code and guard contract
+        run: |
+          python -m pip install pytest numpy
+          python -m pytest -q tests/test_integration_guard.py
+      - name: Require independently complete release
+        run: python integration_guard.py --require-ready --out CURRENT_READINESS.json
+      - name: Preserve blocked-or-ready evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: myriad-release-readiness
+          path: CURRENT_READINESS.json
+          if-no-files-found: ignore
+          retention-days: 14

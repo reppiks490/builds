@@ -1,0 +1,25 @@
+{
+  "schema": "myriad.adaptive_sandbox_pilot.v1",
+  "candidates_created": 100,
+  "sampled_workflows": 100,
+  "agents_per_workflow_sampled": 1,
+  "validation_and_unseen_improved_count": 100,
+  "quarantined_regression_count": 0,
+  "all_candidate_receipts_verified": true,
+  "verified_receipt_count": 100,
+  "candidate_ledger_status": {
+    "proposals": 100,
+    "agents_with_candidate_experience": 100,
+    "synthetic_heldout_improved_candidates": 100,
+    "auto_promotions": 0,
+    "status": "advisory_memory_only"
+  },
+  "auto_promotion_count": 0,
+  "real_world_skills_certified": 0,
+  "training_kind": "isolated real backpropagation on synthetic samples",
+  "mean_train_before": 1.2354825258255004,
+  "mean_train_after": 1.0441903686523437,
+  "mean_unseen_before": 1.2193255829811096,
+  "mean_unseen_after": 1.106137837767601,
+  "seconds_elapsed": 3.581
+}

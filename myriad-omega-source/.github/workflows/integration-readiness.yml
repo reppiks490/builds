@@ -1,0 +1,38 @@
+name: MYRIAD Ω / offline integration readiness (no merges)
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install offline test runtime
+        run: python -m pip install pytest numpy torch
+      - name: Syntax and isolated contract tests
+        run: |
+          python -m compileall -q integration_guard.py integration_contract.py
+          python -m pytest -q tests/test_integration_guard.py
+      - name: Generate conservative release snapshot
+        run: python integration_guard.py --out INTEGRATION_READINESS.json
+      - name: Assert merge remains blocked
+        run: |
+          python - <<'PY'
+          import json
+          data=json.load(open('INTEGRATION_READINESS.json'))
+          assert data['status']=='BLOCKED'
+          assert data['automatic_merge_allowed'] is False
+          print('Correct: integration remains blocked pending independent acceptance gates.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: myriad-integration-readiness
+          path: INTEGRATION_READINESS.json
+          retention-days: 14

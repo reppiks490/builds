@@ -1,0 +1,25 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.sqlite3
+*.sqlite3-*
+*.env
+!model_connections.env.example
+.venv/
+model_cache/
+reports/
+
+training/weightbank/
+
+# Local training checkpoints; upload only as separate, reviewed releases
+training/abilitybank/
+training/agentbank*/
+training/weightbank/
+
+training/adaptive_candidates/
+training/full_fleet_run.log
+training/agentbank/
+server_verify.log
+
+# Private evaluation answer keys and model responses (never commit)
+evaluation_runs/

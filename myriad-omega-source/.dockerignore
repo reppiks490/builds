@@ -1,0 +1,12 @@
+__pycache__
+.pytest_cache
+*.pyc
+*.sqlite3
+*.sqlite3-*
+*.env
+.venv
+*.zip
+preview-*.png
+.git
+.github
+FLEET_CERTIFICATION.json

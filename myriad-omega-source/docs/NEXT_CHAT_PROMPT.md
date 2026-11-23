@@ -1,0 +1,15 @@
+> **LATEST v1.5 THREE-HEAD MODE:** use `coordination/MASTER_PROMPT_HEAD_A.md`, `coordination/MASTER_PROMPT_HEAD_B.md`, `coordination/MASTER_PROMPT_HEAD_C.md`. These supersede the single-chat prompt below, which is retained for historical compatibility.
+
+# COPY INTO THE NEXT CHAT — MYRIAD Ω CONTINUATION
+
+Continue **MYRIAD Ω PENTARCH** from the verified standalone GitHub handoff; do not restart or fabricate progress.
+
+GitHub source: `reppiks490/builds`, branch `agent/myriad-omega-independent-handoff`, folder `myriad-omega-v14/` (latest), with immutable prior `myriad-omega/` (v1.3). Begin by reading `README_NEXT_CHAT.md`, `docs/PHASE_V14.md`, `docs/AGENT_HANDOFF.md`, `docs/VERIFICATION_MATRIX.md`, `docs/REPRODUCE_AND_OPERATE.md`, `docs/KNOWN_GAPS.md`, `SOURCE_MANIFEST.json`; fetch `SOURCE_BUNDLE.tar.gz.b64`, decode it and verify SHA before editing. Load large weight banks only from an independently verified available host; source bundle does NOT include 8.22GB agent weights or the 640MB ability weights.
+
+The user requires: 10 tiers, 5 brains, 100 workflows, 1,000 pipelines, 10,000 core agents (NOT 20,000), 40,000 pupil slots, 1,500 skills, 500 classes, 1,000 training tracks, >400k independently trained parameters PER core agent, 10M independent synthetic ability adapters; keep capability evidence honest. On a 16 GB NIMO laptop, model execution must be shared and bounded. No claim of AGI, real trading profit or actual 10k concurrent LLM sessions without proof.
+
+**Absolute merge lock:** finish MYRIAD, pass all 13 independent release gates, then prepare read-only integration with `reppiks490/umbra-sovereign-worlds` and `reppiks490/Icarus` OMNIGENESIS draft PR #503 (branch `agent/omnigenesis-phase-01-foundation`); only then, with explicit owner permission and review, consider merge into `main`. Do not modify either target early. Scheduled development cannot use Codex per prior user prohibition.
+
+Reproduce baseline and add meaningful capabilities: real model-backed five-brain inference, independently curated general reasoning/trading/real-world evaluation, production security, fault recovery, continual learning with no auto-promotion and mobile UI. Run tests and record exact outputs, current source SHA, gate status, failures; update this GitHub handoff BEFORE ending a chat. Never imply asynchronous background execution from chat.
+
+**Latest engineering v1.4:** provider HTTP redirects blocked; request JSON size/content-type bounded; crash recovery sweeps all jobs and restores round-robin; Origin and JSON mutation validation; manually gated sealed synthetic holdout evaluation with offline grade-recomputation, private transcripts and read-only dashboard. v1.4 Python suite 77 passed/3 skipped in the full source-only worktree, real provider benchmark not run. Recheck clean archive and GitHub source at fresh SHA. Never publish `evaluation_runs/` or its private answer keys.

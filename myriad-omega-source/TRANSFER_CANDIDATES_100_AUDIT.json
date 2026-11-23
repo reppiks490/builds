@@ -1,0 +1,14 @@
+{
+  "candidates_checked": 109,
+  "valid": 109,
+  "invalid": [],
+  "all_valid": true,
+  "synthetic_gate_passed": 109,
+  "mean_shifted_mse_before": 10.854903,
+  "mean_shifted_mse_after": 1.98676,
+  "mean_normal_mse_before": 1.222559,
+  "mean_normal_mse_after": 1.033935,
+  "authority": "quarantined_only",
+  "real_world_certifications": 0,
+  "live_weight_promotions": 0
+}

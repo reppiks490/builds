@@ -1,0 +1,17 @@
+{
+  "schema":"myriad.continuity.v1",
+  "source_repo":"reppiks490/builds",
+  "source_branch":"agent/myriad-omega-independent-handoff",
+  "latest_folder":"myriad-omega-v15",
+  "master_issue":"https://github.com/reppiks490/builds/issues/1",
+  "roles":["HEAD_A","HEAD_B","HEAD_C"],
+  "release_gates":13,
+  "release_status":"blocked",
+  "external_repository_mutations_before_completion":false,
+  "target_repos_after_approval":["reppiks490/umbra-sovereign-worlds","reppiks490/Icarus PR #503"],
+  "large_weights_in_git_archive":false,
+  "real_model_calls_certified_on_source_host":0,
+  "on_start":["verify GitHub source SHA and archive", "run tests", "require release gate to reject", "read assigned prompt", "claim distinct owned branch"],
+  "on_end":["commit own branch", "publish exact commit SHA to master issue", "record failures and skipped tests", "preserve honest gate status", "update recovery manifest with coordinator"],
+  "non_codex_scheduled_automation_only":true
+}
