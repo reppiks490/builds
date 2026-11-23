@@ -1,5 +1,5 @@
 {
-  "excludes": "all private tokens, large weights, training candidates, DBs, caches, images",
+  "excludes": "private tokens, large weights, forensic training row digest, training candidates, DBs, caches, images",
   "files": {
     ".dockerignore": {
       "bytes": 124,
@@ -158,16 +158,16 @@
       "sha256": "8026b47da766bbf2aef0fcca8df4e8178c1c5d12493ad2448937eac11f1fb8fa"
     },
     "docs/KNOWN_GAPS.md": {
-      "bytes": 2411,
-      "sha256": "b160f3b8ebff57644ba91d5fe43c96ab1dda4dbf21d05e110e3063b16e7651a6"
+      "bytes": 2453,
+      "sha256": "8b704a33eb4f86ba4bee047cd864cecc4cc0e67f7bfc65decae0f670b7e5c9df"
     },
     "docs/NEXT_CHAT_PROMPT.md": {
       "bytes": 2035,
       "sha256": "cb8870e890c3f5abddcf5dd99d106527ac284d40752efbd24d0ee2b694166dc1"
     },
     "docs/REPRODUCE_AND_OPERATE.md": {
-      "bytes": 4125,
-      "sha256": "ed8e62e2cbee34f75dcc4ee9161e0c6b7d2d9e5479e14458f09901d667ec84e4"
+      "bytes": 4379,
+      "sha256": "fbf878e816171f1b48488c33fcec69e6a1159f00ad5fbb75ed37286e320c0f68"
     },
     "docs/VERIFICATION_MATRIX.md": {
       "bytes": 2456,
@@ -314,12 +314,12 @@
       "sha256": "dc9e31e7d8e5184f6331aba1a112c25c6c06a07496699efd787e9eccc7f346f5"
     },
     "tools/package_source.py": {
-      "bytes": 3233,
-      "sha256": "28b428c462203716a1d7ef67a1cffc144224435a2781246786134a5fd7017ef6"
+      "bytes": 4139,
+      "sha256": "30409d5c3e46dac67c1795395506977dd28c2194ad6a8bc7da1f564970c7e178"
     },
     "tools/snapshot_source.py": {
-      "bytes": 5168,
-      "sha256": "1299f1135fe239e8c4841191681334cd6672ef6bb2bb97af6ed65699cc96b8b0"
+      "bytes": 5194,
+      "sha256": "8e84820e323f38dc4326291795fe4ed9a9efd91302c66b0e3c57a9a59eb21825"
     },
     "training/ability_weight_bank.py": {
       "bytes": 12119,
