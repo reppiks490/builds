@@ -11,12 +11,12 @@
     "SOURCE_BUNDLE.tar.gz.b64.part07",
     "SOURCE_BUNDLE.tar.gz.b64.part08"
   ],
-  "compressed_bytes": 179472,
-  "compressed_sha256": "704c98a4cc8d59f1df13cf973b8904f3f10630b7ee8bf69096a7e2af7948cf64",
-  "b64_chars": 239296,
+  "compressed_bytes": 179888,
+  "compressed_sha256": "ad0156605cecc734f233dd90456c92afff2cd7ab746a94eb8a95410e130e3e82",
+  "b64_chars": 239852,
   "source_files": 107,
-  "sha256_manifest_sha256": "1c15736d5f209975fbda7939361786b34c847123c923bae8b01f85f9f6966d33",
+  "sha256_manifest_sha256": "6adc1cfc00509b4d675c608e12cb7215f8ab3971e9c732d6a754c693d0700476",
   "restore": "Join base64 parts in numeric order, ignore whitespace, base64-decode; compare compressed sha256; inspect tar entries and extract into empty directory.",
-  "portable_zip_sha256": "e3bc934d7f2803b0f8a82b3ad383a2759077e4cdf24707c41ebb268e7a8ec5da",
-  "portable_zip_bytes": 231201
+  "portable_zip_sha256": "39f6b86bc89e03211e19068388c50de3ae4c53f4f4c03eab9b3663f35334b96f",
+  "portable_zip_bytes": 231687
 }
