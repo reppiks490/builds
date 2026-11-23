@@ -1,0 +1,117 @@
+{
+  "schema": "myriad.bank_integration.evidence.v1",
+  "actual_portable_sample_imported": 10,
+  "independent_agent_411k_weights_newly_gradient_trained": 10,
+  "synthetic_ability_adapters_trained_and_conditioned": 10000,
+  "quarantined_agent_candidates": 10,
+  "candidates_improved_on_synthetic_holdout": 10,
+  "all_candidates_verified": true,
+  "source_fleet_target": 10000,
+  "full_ability_target": 10000000,
+  "historical_full_banks_mounted": false,
+  "real_world_competence_verified": false,
+  "release_authorized": false,
+  "elapsed_seconds": 1.17,
+  "results": [
+    {
+      "agent": 1,
+      "ability_start": 1,
+      "ability_end": 1000,
+      "holdout_before": 0.9835066795349121,
+      "holdout_after": 0.8795725107192993,
+      "improved": true,
+      "candidate_sha256": "30d8d8e67d441d3a3925864b25815004a63d11fb74d46cb02f134757a40e3da5",
+      "verified": true
+    },
+    {
+      "agent": 2,
+      "ability_start": 1001,
+      "ability_end": 2000,
+      "holdout_before": 1.1375844478607178,
+      "holdout_after": 0.783372163772583,
+      "improved": true,
+      "candidate_sha256": "673540fdba6982aa5741c1f43e205acbe70da9f7becb80eeebae9bb77b3fc705",
+      "verified": true
+    },
+    {
+      "agent": 3,
+      "ability_start": 2001,
+      "ability_end": 3000,
+      "holdout_before": 1.1843808889389038,
+      "holdout_after": 0.8805487751960754,
+      "improved": true,
+      "candidate_sha256": "4de1d102baf3b97bd0895709c015a27ab676eb4c7c8978e9fd3064fca5ce70cf",
+      "verified": true
+    },
+    {
+      "agent": 4,
+      "ability_start": 3001,
+      "ability_end": 4000,
+      "holdout_before": 1.1008589267730713,
+      "holdout_after": 0.9530816078186035,
+      "improved": true,
+      "candidate_sha256": "468513395bdc171cad54ce54f85c94b5ae2b2671c233430f4f769e6972f8685a",
+      "verified": true
+    },
+    {
+      "agent": 5,
+      "ability_start": 4001,
+      "ability_end": 5000,
+      "holdout_before": 0.968077540397644,
+      "holdout_after": 0.7087027430534363,
+      "improved": true,
+      "candidate_sha256": "c299cac281a7f2edc53099c6b1e890b905bebb4fbafec819f125cdb3914aef90",
+      "verified": true
+    },
+    {
+      "agent": 6,
+      "ability_start": 5001,
+      "ability_end": 6000,
+      "holdout_before": 0.7973812818527222,
+      "holdout_after": 0.5858474969863892,
+      "improved": true,
+      "candidate_sha256": "203d94e35c6f09db1cd4f1823d2df43e10d2dc1229788a0d06b791b08998c5d5",
+      "verified": true
+    },
+    {
+      "agent": 7,
+      "ability_start": 6001,
+      "ability_end": 7000,
+      "holdout_before": 1.2319657802581787,
+      "holdout_after": 0.7888121604919434,
+      "improved": true,
+      "candidate_sha256": "ff02e5ac62f4d4d2d6c550106abd507a90685ac5bc5bfb76667cfe319534b180",
+      "verified": true
+    },
+    {
+      "agent": 8,
+      "ability_start": 7001,
+      "ability_end": 8000,
+      "holdout_before": 0.9579181671142578,
+      "holdout_after": 0.7472826838493347,
+      "improved": true,
+      "candidate_sha256": "e2a0adebe11aa6dd002f6fdb04400d1ea7680b821b12f12499157bb0b55686c3",
+      "verified": true
+    },
+    {
+      "agent": 9,
+      "ability_start": 8001,
+      "ability_end": 9000,
+      "holdout_before": 1.077457308769226,
+      "holdout_after": 0.825366199016571,
+      "improved": true,
+      "candidate_sha256": "05400786f515b9ac669df735925f9edc85e2af4180064370a16ab1d60ac7727a",
+      "verified": true
+    },
+    {
+      "agent": 10,
+      "ability_start": 9001,
+      "ability_end": 10000,
+      "holdout_before": 0.9119795560836792,
+      "holdout_after": 0.6631708741188049,
+      "improved": true,
+      "candidate_sha256": "d7e1f1ee034457e0a1d0ff6812efa7a42848396853433fb858651e75d1431a6e",
+      "verified": true
+    }
+  ]
+}
