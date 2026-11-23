@@ -30,9 +30,13 @@ def owner_of(path: str, contract=None):
     pure=PurePosixPath(path)
     if pure.is_absolute() or '..' in pure.parts or '.' in pure.parts:
         raise ValueError('Path must be a relative repository path')
+    # Git diff paths are repository-root-relative. The standalone editable
+    # project lives under myriad-omega-source/, while ownership patterns
+    # describe paths relative to the Python project root.
+    scoped=path[len('myriad-omega-source/'):] if path.startswith('myriad-omega-source/') else path
     matches=[]
     for head,patterns in contract['rules'].items():
-        if any(fnmatch.fnmatchcase(path,pattern) for pattern in patterns):
+        if any(fnmatch.fnmatchcase(scoped,pattern) for pattern in patterns):
             matches.append(head)
     if len(matches)>1:raise ValueError(f'Ambiguous ownership for {path}: {matches}')
     return matches[0] if matches else None
