@@ -1,0 +1,50 @@
+name: MYRIAD Ω — isolated three-head source CI
+on:
+  push:
+    branches:
+      - agent/myriad-head-a-coordination
+      - agent/myriad-head-b-training
+      - agent/myriad-head-c-runtime
+    paths:
+      - 'myriad-omega-source/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-only-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies for synthetic research tests only
+        run: python -m pip install --disable-pip-version-check pytest numpy torch safetensors
+      - name: Python syntax
+        working-directory: myriad-omega-source
+        run: python -m compileall -q .
+      - name: Comprehensive source-only tests
+        working-directory: myriad-omega-source
+        run: python -m pytest -q
+      - name: Assert release authority remains blocked on source-only checkout
+        working-directory: myriad-omega-source
+        run: |
+          python - <<'PY'
+          import json,subprocess,sys
+          p=subprocess.run([sys.executable,'integration_guard.py','--require-ready'],text=True,capture_output=True)
+          if p.returncode!=2:
+              raise SystemExit(f'Expected release lock exit 2, got {p.returncode}')
+          state=json.loads(p.stdout)
+          assert state['status']=='BLOCKED',state
+          assert state['passed_gates']<state['total_gates'],state
+          assert not state['automatic_merge_allowed'],state
+          assert not state['repositories_modified'],state
+          print('verified source-only release lock:',state['passed_gates'],'/',state['total_gates'])
+          PY
+      - name: Ownership checker smoke
+        working-directory: myriad-omega-source
+        run: |
+          python coordination/check_ownership.py --head HEAD_A --files docs/PHASE_V15.md
+          python coordination/check_ownership.py --head HEAD_B --files training/independent_eval.py
+          python coordination/check_ownership.py --head HEAD_C --files provider_budget.py
