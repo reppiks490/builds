@@ -70,7 +70,10 @@ class ModelGateway:
         class RejectRedirect(HTTPRedirectHandler):
             def redirect_request(self, req, fp, code, msg, headers, newurl):
                 return None
-        req=Request(url,data=json.dumps(data).encode('utf8') if data is not None else None,
+        serialized=json.dumps(data).encode('utf8') if data is not None else None
+        if serialized is not None and len(serialized)>180_000:
+            raise ModelError('Provider request exceeds 180 KB transport maximum')
+        req=Request(url,data=serialized,
                     headers={'Content-Type':'application/json',**(headers or {})},method='POST' if data is not None else 'GET')
         try:
             with build_opener(RejectRedirect).open(req,timeout=timeout) as rsp:

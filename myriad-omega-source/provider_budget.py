@@ -16,6 +16,9 @@ import os
 import sqlite3
 import uuid
 
+MODEL_REQUEST_MAX_BYTES = 128_000
+MODEL_REQUEST_MAX_MESSAGES = 16
+
 class BudgetDenied(RuntimeError):
     pass
 
@@ -60,11 +63,25 @@ class ProviderBudget:
             raise BudgetDenied('Requested generation exceeds approved output-token cap')
         if brain not in ('NOESIS','MNEMOSYNE','PRAXIS','AEGIS','METIS'):
             raise BudgetDenied('Unknown model brain')
-        if not isinstance(provider,str) or not isinstance(model,str) or not isinstance(messages,list):
-            raise BudgetDenied('Malformed provider request')
-        # Only hashes, not potentially secret-bearing prompts, appear on disk.
-        request_sha=hashlib.sha256(json.dumps(messages,sort_keys=True,ensure_ascii=False,
-                                               separators=(',',':')).encode('utf8')).hexdigest()
+        if (not isinstance(provider,str) or not isinstance(model,str) or not provider or not model
+                or len(provider)>64 or len(model)>256 or not isinstance(messages,list)
+                or not 0<=len(messages)<=MODEL_REQUEST_MAX_MESSAGES):
+            raise BudgetDenied('Malformed or oversized provider request')
+        for message in messages:
+            if (not isinstance(message,dict) or set(message)!={'role','content'}
+                    or message['role'] not in ('system','user','assistant')
+                    or not isinstance(message['content'],str)):
+                raise BudgetDenied('Only bounded text-role messages are supported')
+        # Only hashes, not secret-bearing prompts, appear on disk. Keep the
+        # *serialized* request bounded BEFORE allocating a full model payload.
+        try:
+            payload=json.dumps(messages,sort_keys=True,ensure_ascii=False,
+                               separators=(',',':')).encode('utf8')
+        except (ValueError,TypeError,UnicodeError) as exc:
+            raise BudgetDenied('Model messages could not be encoded') from exc
+        if len(payload)>MODEL_REQUEST_MAX_BYTES:
+            raise BudgetDenied('Model request exceeds 128 KB maximum')
+        request_sha=hashlib.sha256(payload).hexdigest()
         rid='REQ-'+uuid.uuid4().hex.upper()
         day=_utc_day()
         with self.lock:
@@ -135,5 +152,9 @@ class BudgetedGateway:
         except BaseException as exc:
             self.budget.finish(rid,failure=exc)
             raise
+        if not isinstance(result,str) or not result.strip():
+            failure=BudgetDenied('Provider returned non-text or blank output')
+            self.budget.finish(rid,failure=failure)
+            raise failure
         self.budget.finish(rid,answer=result)
         return result
