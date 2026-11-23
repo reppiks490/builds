@@ -1,0 +1,23 @@
+{
+  "schema": "myriad.source_bundle.v1",
+  "release": "v1.4",
+  "parts": [
+    "SOURCE_BUNDLE.tar.gz.b64.part01",
+    "SOURCE_BUNDLE.tar.gz.b64.part02",
+    "SOURCE_BUNDLE.tar.gz.b64.part03",
+    "SOURCE_BUNDLE.tar.gz.b64.part04",
+    "SOURCE_BUNDLE.tar.gz.b64.part05",
+    "SOURCE_BUNDLE.tar.gz.b64.part06",
+    "SOURCE_BUNDLE.tar.gz.b64.part07",
+    "SOURCE_BUNDLE.tar.gz.b64.part08",
+    "SOURCE_BUNDLE.tar.gz.b64.part09"
+  ],
+  "compressed_bytes": 193897,
+  "compressed_sha256": "b09ce2a5942f34ab37147a8cae12ea911b96940df66dd44f74a5399da9b42b20",
+  "b64_chars": 258532,
+  "source_files": 112,
+  "sha256_manifest_sha256": "c4f19117eddc736e916fb19e573a6b0288973389875f03ee3e0a453d14465668",
+  "restore": "Join base64 parts in numeric order, ignore whitespace, base64-decode; compare compressed sha256; inspect tar entries and extract into empty directory.",
+  "portable_zip_sha256": "549ef23061b334e1ab2f1004a09aa2c7df89b4691d87fa4c101f3ee167cf0d1a",
+  "portable_zip_bytes": 248914
+}
