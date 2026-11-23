@@ -1,0 +1,161 @@
+{
+  "ability_weights": {
+    "hashed_batches_verified": 200,
+    "integrity_level": "all stored batch hashes checked; hashes are not independent provenance attestation",
+    "ledger_batch_count": 200,
+    "ledger_covered_rows": 10000000,
+    "malformed_batches": 0,
+    "real_world_certified": 0,
+    "status": "synthetic_complete",
+    "synthetic_trained": 10000000,
+    "target": 10000000,
+    "unknown_status_rows": 0
+  },
+  "agent_weights": {
+    "agents_target": 10000,
+    "bank_exists": true,
+    "expected_fp16_bytes": 8220000000,
+    "file_bytes": 8220000000,
+    "hashed_agent_rows_verified": 10000,
+    "initialized": 10000,
+    "integrity_level": "all row digests matched; no independent training or mastery attestation",
+    "invalid_agent_rows": 0,
+    "per_agent_parameters": 411000,
+    "status": "trained_complete_internal_integrity",
+    "total_agent_parameters": 4110000000,
+    "trained": 10000
+  },
+  "architecture_registry": {
+    "brains": {
+      "actual": 5,
+      "expected": 5
+    },
+    "capability_addresses": {
+      "actual": 10000000,
+      "expected": 10000000
+    },
+    "classes": {
+      "actual": 500,
+      "expected": 500
+    },
+    "pipelines": {
+      "actual": 1000,
+      "expected": 1000
+    },
+    "skills": {
+      "actual": 1500,
+      "expected": 1500
+    },
+    "tiers": {
+      "actual": 10,
+      "expected": 10
+    },
+    "workflows": {
+      "actual": 100,
+      "expected": 100
+    }
+  },
+  "automatic_merge_allowed": false,
+  "gates": [
+    {
+      "confidence": "locally_checked",
+      "evidence": "Exact tier, brain, workflow, pipeline, skill/class and address counts (definitions only).",
+      "id": "structural_registry",
+      "passed": true
+    },
+    {
+      "confidence": "locally_checked",
+      "evidence": "10000/10000 ledger-trained, 10000/10000 per-row hashes verified; 411000 parameters each.",
+      "id": "agent_weight_bank",
+      "passed": true
+    },
+    {
+      "confidence": "locally_checked",
+      "evidence": "10000000/10000000 synthetic rows; 200/200 internal batch hashes checked; no semantic mastery implied.",
+      "id": "ability_weight_bank",
+      "passed": true
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Evidence of task-specific general-intelligence, trading and real-world skill evaluations",
+      "id": "meaningful_skill_benchmarks",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Live, authenticated model executions with reproducible per-brain artifacts",
+      "id": "actual_model_inference",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "1,000 tracks evaluated on unseen data with independent review",
+      "id": "curriculum_gates",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Authentication, authorization, resource limits, secrets handling and incident recovery reviewed",
+      "id": "production_security",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Real deployment with restart, disaster-recovery and long-running load evidence",
+      "id": "deployment_recovery",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "UMBRA and OMNIGENESIS read-only schema/replay and authority tests at pinned revisions",
+      "id": "cross_system_replay",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "No temporal leakage, real-data provenance, out-of-sample and forward paper evidence",
+      "id": "trading_research_gates",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Required CI jobs green at CURRENT target commit SHAs, not prior commits",
+      "id": "current_head_ci",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Independent human/security/scientific review of all integrated components",
+      "id": "independent_review",
+      "passed": false
+    },
+    {
+      "confidence": "external_verification_required",
+      "evidence": "Explicit project-owner review and permission for final merge",
+      "id": "owner_approval",
+      "passed": false
+    }
+  ],
+  "generated_utc": "2026-11-23T08:56:53+00:00",
+  "meaningful_abilities_certified": 0,
+  "passed_gates": 3,
+  "recommendation": "Continue isolated development. No merge or integration until all gates have independent evidence and owner authorizes final merge.",
+  "repositories_modified": false,
+  "schema": "myriad.integration_readiness.v1",
+  "status": "BLOCKED",
+  "targets": {
+    "omnigenesis": {
+      "base": "main",
+      "head": "agent/omnigenesis-phase-01-foundation",
+      "pr": 503,
+      "repository": "reppiks490/Icarus",
+      "role": "research_only_evidence_adapter"
+    },
+    "umbra": {
+      "branch": "main",
+      "repository": "reppiks490/umbra-sovereign-worlds",
+      "role": "read_only_simulation_adapter"
+    }
+  },
+  "total_gates": 13
+}
